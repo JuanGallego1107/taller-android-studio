@@ -42,6 +42,16 @@ fun HomeScreen(username: String, onLogout: () -> Unit) {
                 modifier = Modifier.padding(16.dp)
             )
 
+            Button(
+                onClick = onLogout,
+                modifier = Modifier
+                    .padding(horizontal = 16.dp)
+                    .fillMaxWidth()
+            ) {
+                Text("Cerrar sesión")
+            }
+
+
             LazyColumn(
                 modifier = Modifier
                     .fillMaxSize()

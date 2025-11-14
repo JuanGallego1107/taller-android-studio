@@ -30,7 +30,6 @@ fun ProductCard(product: Product) {
 
         Column(modifier = Modifier.padding(12.dp)) {
 
-            // Imagen del producto
             Image(
                 painter = rememberAsyncImagePainter(product.image),
                 contentDescription = product.name,
